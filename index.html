@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
     <head>
     	<meta name="baidu-site-verification" content="qJoSIfqjoo" />
         <title>OnlyBigRoc Blog</title>
@@ -13,8 +14,17 @@
 		
 		<meta name="keywords" content="博客,个人博客,Blog,github">
 		<meta name="description" content="github,web,托管">
-        <meta name="description" content="github,github静态页面,pages"/>
+        <meta name="description" content="github,github静态页面,pages,技术博客,JavaWeb,HTML,javascript,oracle,mysql,ajax"/>
 		
+		<!--360 搜索 必填-->
+		<meta property="og:type" content="blog"/>
+		<meta property="og:image" content="/images/01.jpg"/>
+		<meta property="og:release_date" content="2017年5月28日"/>
+		<!--360 搜索 选填-->
+		<meta property="og:title" content="bigroc,onlybigroc,blog,博客"/>
+		<meta property="og:description" content=" 技术博客,JavaWeb,HTML,javascript,oracle,mysql,ajax" />
+		<meta property="og:author" content="BigRoc,大大大鹏"/>
+
 
         <!-- CSS | bootstrap -->
         <!-- Credits: http://getbootstrap.com/ -->
@@ -45,10 +55,10 @@
         <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/> 
 
 		<!-- CSS | Google Fonts 
-		太慢了干掉
+		太慢了影响访问速度干掉
         <link href='http://fonts.useso.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
         -->
-        <!-- Favicon -->
+		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 
 
@@ -80,11 +90,11 @@
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Laoding page -->
+        <!-- Laoding page --><!-- 等待加载图片 -->
         <div id="preloader"><div id="spinner"></div></div>
 
-        <!-- .slideshow -->
-        <ul class="cb-slideshow" id="cb_slideshow" style="display:none">
+        <!-- .slideshow --><!--背景图片-->
+        <ul class="cb-slideshow" id="cb_slideshow" style="display:block;">
             <li><span>Image 01</span><div></div></li>
             <li><span>Image 02</span><div></div></li>
             <li><span>Image 03</span><div></div></li>
@@ -114,8 +124,8 @@
     <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
     	 
 		 
-                                
-         <div class="image-holder one" id="pic_prof_1" style="display:block">
+		<!-- 跟随鼠标变换头像 -->
+        <div class="image-holder one" id="pic_prof_1" style="display:none;">
         
                 <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
                 <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
@@ -129,8 +139,8 @@
                 
         </div>
         
-        <!-- style for simple image profile -->		
-   		<div class="circle-img" id="pic_prof_2" style="display:none"></div>
+        <!-- 固定头像-->		
+   		<div class="circle-img" id="pic_prof_2" style="display:block;"></div>
        
     
     </div>
@@ -226,14 +236,14 @@
                                             <!-- profile -->
                                             <div id="profile" class="content_2">
                                                 <!-- .title -->
-<h1 class="h-bloc">Profile - 关于我的</h1>
+<h1 class="h-bloc">Profile - 关于我</h1>
 
 <div class="row top-p">
     <div class="col-md-6 profile-l">
  		
         <!--About me-->
         <div class="title_content">
-            <div class="text_content">brown smith</div>
+            <div class="text_content">个人简介</div>
             <div class="clear"></div>
         </div>
 
@@ -249,7 +259,7 @@
             <li>
                 <i class="glyphicon glyphicon-calendar"></i>
                 <label>生日</label>
-                <span class="value">8 10, 1994</span>
+                <span class="value">8/10/1994</span>
                 <div class="clear"></div>
             </li>
 
@@ -276,30 +286,29 @@
 
             <li>
                 <i class="glyphicon glyphicon-globe"></i>
-                <label>博客</label>
-                <span class="value"><a href="#" target="_blank">http://bigroc.xyz</a></span>
+                <label>新浪微博</label>
+                <span class="value"><a href="http://weibo.com/onlyBigRoc" target="_blank">http://weibo.com/onlyBigRoc</a></span>
                 <div class="clear"></div>
             </li>
 
         </ul>
-
-
-        <p style="margin-bottom:20px">
-            <i class="fa fa-quote-left"></i>       
-            
+        <!-- 介绍 -->
+        <p style="margin-bottom:5px">
+            <i class="fa fa-quote-left">什么是GitHub？</i><br>
+             GitHub是一个分布式的版本控制系统，最初由Linus Torvalds编写，用作Linux内核代码的管理。
+             Github是一个代码托管平台和开发者社区，开发者可以在Github上创建自己的开源项目并与其他开发者协作编码。创业公司可以用它来托管软件项目，开源项目可以免费托管，私有项目需付费。
         </p>
         
-         <p style="margin-bottom:20px">
-            <i class="fa fa-quote-left"></i>       
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. 
-
+         <p style="margin-bottom:5px">
+            <i class="fa fa-quote-left">为什么使用GitHub Pages？</i><br>
+            GitHub Pages本用于介绍托管在GitHub的项目，不过，GitHub Pages有300M免费空间，由于他的空间免费稳定，用来做搭建一个博客再好不过了。github Pages可以被认为是用户编写的、托管在github上的静态网页。
         </p>
 
     </div>
     <!-- End left-wrap -->
-
+	<!-- 关于我的 侧栏图片 -->
     <div class="col-md-6 profile-r">
-
+	
         <div class="cycle-slideshow">
             <img src="images/img-profile/about_1.jpg" alt="" />
             <img src="images/img-profile/about_2.png" alt="" />
@@ -2052,7 +2061,7 @@
                                                                 <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> Adress:</span> 中国-陕西-西安-长安区<br /><br /></li>
                                                                 <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span> onlybigroc@gmail.com</li>
                                                                 <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:</span> +86 186****1024</li>
-                                                                <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span> www.bigroc.xyz</li>
+                                                                <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span> http://weibo.com/onlyBigRoc</li>
                                                                 <!--
                                                                 <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> 
                                                                 Skype:</span> brown-smith-skype</li>
@@ -2158,7 +2167,7 @@
         <!-- End wrapper -->
 
         <!-- Switcher -->
-        <div id="custumize-style">
+        <!-- <div id="custumize-style">
             <h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
             <div>
                 <h3>Theme Color</h3>
@@ -2279,7 +2288,7 @@
             <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
         </div>
         <!-- End Switcher -->
-
+ -->
 
 
         <!-- jquery | jQuery 1.11.0 -->
